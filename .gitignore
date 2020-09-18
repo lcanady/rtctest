@@ -84,5 +84,4 @@ functions/src/
 functions/tsconfig.json
 functions/tslint.json
 next-env.d.ts
-public/
 storage.rules
