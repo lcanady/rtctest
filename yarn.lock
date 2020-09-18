@@ -3933,7 +3933,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@~4.1.0:
+debug@4, debug@^4.1.0, debug@^4.1.1, debug@~4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
@@ -4483,11 +4483,6 @@ eventemitter3@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
-
-eventemitter3@^4.0.7:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
-  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 events@^3.0.0:
   version "3.2.0"
@@ -5071,11 +5066,6 @@ gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.1.tgz#58f4361ff987e5ff6e1e7a210827aa371eaac269"
   integrity sha512-r8EC6NO1sngH/zdD9fiRDLdcgnbayXah+mLgManTaIZJqEC1MZstmnox8KpnI2/fxQwrp5OpCOYWLp4rBl4Jcg==
-
-get-browser-rtc@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/get-browser-rtc/-/get-browser-rtc-1.0.2.tgz#bbcd40c8451a7ed4ef5c373b8169a409dd1d11d9"
-  integrity sha1-u81AyEUaftTvXDc7gWmkCd0dEdk=
 
 get-caller-file@^2.0.1:
   version "2.0.5"
@@ -7919,12 +7909,7 @@ querystring@0.2.0, querystring@^0.2.0:
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
-queue-microtask@^1.1.0:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.1.4.tgz#40841ace4356b48b35b5ea61a2e1fe0a23c59ce1"
-  integrity sha512-eY/4Obve9cE5FK8YvC1cJsm5cr7XvAurul8UtBDJ2PR1p5NmAwHtvAt5ftcLtwYRCUKNhxCneZZlxmUDFoSeKA==
-
-randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.3, randombytes@^2.0.5, randombytes@^2.1.0:
+randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
   integrity sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==
@@ -8613,25 +8598,6 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
-
-simple-peer@^9.7.2:
-  version "9.7.2"
-  resolved "https://registry.yarnpkg.com/simple-peer/-/simple-peer-9.7.2.tgz#8cd9cb156bf456ad9c3d379119f0c39dfb3b20f7"
-  integrity sha512-xeMyxa9B4V0eA6mf17fVr8nm2QhAYFu+ZZv8zkSFFTjJETGF227CshwobrIYZuspJglMD63egcevQXGOrTIsuA==
-  dependencies:
-    debug "^4.0.1"
-    get-browser-rtc "^1.0.0"
-    queue-microtask "^1.1.0"
-    randombytes "^2.0.3"
-    readable-stream "^3.4.0"
-
-simple-peerjs@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/simple-peerjs/-/simple-peerjs-1.0.1.tgz#1f35f61d17727fb6905cfad079e8865125986d55"
-  integrity sha512-OiStbXGisKCs+O3Rd/uH8fT+wsDo0Z/3GAQjekNNB+fg1CUQos3wZVoWeQ6PD5A7ePzw6b5aP7CJGWuZR0yQ0w==
-  dependencies:
-    eventemitter3 "^4.0.7"
-    simple-peer "^9.7.2"
 
 simple-swizzle@^0.2.2:
   version "0.2.2"

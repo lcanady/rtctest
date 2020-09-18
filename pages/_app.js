@@ -1,15 +1,18 @@
 /** @jsx jsx */
-import {jsx} from 'theme-ui'
+import { jsx } from "theme-ui";
 // noinspection ES6CheckImport
-import {ThemeProvider} from 'theme-ui'
-import theme from '../theme'
+import { ThemeProvider } from "theme-ui";
+import theme from "../theme";
+import Frame from "../src/components/layout/Frame";
 
-export default function MyApp({Component, pageProps}) {
+export default function MyApp({ Component, pageProps }) {
   return (
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <Frame>
         <Component {...pageProps} />
-      </ThemeProvider>
-  )
+      </Frame>
+    </ThemeProvider>
+  );
 }
 
 // useEffect(() => {
