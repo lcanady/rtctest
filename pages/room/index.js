@@ -5,7 +5,14 @@ const RoomIndex = () => {
 };
 
 RoomIndex.getInitialProps = ({ res }) => {
-  res.redirect("/room/" + v4());
+  if (res) {
+    res.writeHead(301, {
+      Location: '/room/' + v4()
+    });
+    res.end();
+  }
+
+  return {};
 };
 
 export default RoomIndex;
