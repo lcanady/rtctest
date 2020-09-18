@@ -6,7 +6,7 @@ const next = require("next");
 const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
 const nextHandler = nextApp.getRequestHandler();
-let port = 3000;
+let port = process.env.PORT || 3000;
 
 nextApp.prepare().then(() => app.get("*", (req, res) => nextHandler(req, res)));
 
