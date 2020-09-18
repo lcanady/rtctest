@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import io from "socket.io-client";
 
 
-const socket = io("/");
 
 const Room = () => {
   const localRef = useRef(null);
@@ -15,7 +14,8 @@ const Room = () => {
   useEffect(() => {
     const permissions = async () => {
       const Peer = (await import("peerjs")).default;
-      const myPeer = new Peer();
+      const socket = (await import('socket.io-client')).default("/")
+            const myPeer = new Peer();
       const peers = {};
 
       const addVideoStream = (video, stream) => {
