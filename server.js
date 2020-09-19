@@ -9,16 +9,16 @@ const nextApp = next({dev});
 const nextHandler = nextApp.getRequestHandler();
 let port = process.env.PORT ||3000;
 
-io.on("connection", (socket) => {
-  socket.on("join-room", (roomId, userId) => {
-    socket.join(roomId);
-    socket.to(roomId).broadcast.emit("user-connected", userId);
-    
-    socket.on("disconnect", () => {
-      socket.to(roomId).broadcast.emit("user-disconnected", userId);
-    });
-  });
-});
+io.on('connection', socket => {
+  socket.on('join-room', (roomId, userId) => {
+    socket.join(roomId)
+    socket.to(roomId).broadcast.emit('user-connected', userId)
+
+    socket.on('disconnect', () => {
+      socket.to(roomId).broadcast.emit('user-disconnected', userId)
+    })
+  })
+})
 
 nextApp.prepare().then(() => app.get("*", (req, res) => nextHandler(req, res)));
 
