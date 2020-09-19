@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build"
-
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.17",
@@ -16,6 +15,7 @@
     "@theme-ui/components": "^0.3.1",
     "@theme-ui/preset-future": "^0.3.0",
     "@theme-ui/presets": "^0.3.0",
+    "cors": "^2.8.5",
     "express": "4.17.1",
     "firebase": "^7.20.0",
     "firebase-admin": "^9.2.0",
